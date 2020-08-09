@@ -108,7 +108,7 @@ article {
  
 header {
     background: #1c1c1c;
-    padding: 15px 20px;
+    padding: 5px 10px;
 }
  
 header:after {
@@ -124,6 +124,9 @@ nav li a.ativo {
     background: rgb(156, 156, 156);
 }
 
+nav li a#ativo {
+    color: #000;
+}
 /*######### ANCORA ############*/ 
 
 a.menu_mobile:hover,
@@ -152,15 +155,14 @@ a.menu_mobile {
 /*########### MENU ############*/ 
  
 #menu {
-    margin-top: 20px;
-    font-family: 'FonteLogo';
-    
+    margin-top: 37px; 
+    font-family: 'FonteLogo';    
 }
 
 #menu ul {
     list-style: none;
     background: #1c1c1c;
-    padding: 5px 0;
+    padding: 12px 0px;
 }
  
 #menu li a {
