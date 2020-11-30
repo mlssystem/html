@@ -126,6 +126,7 @@ nav li a.ativo {
 
 nav li a#ativo {
     color: #000;
+    border-radius: 10% 20%;
 }
 /*######### ANCORA ############*/ 
 
@@ -137,8 +138,8 @@ a.menu_mobile:focus {
 
 a.menu_mobile {
     float: right;
-    color: #fff;
-    background: #4e4e4e;
+    color: #000;
+    background: #ccc;
     text-decoration: none;
     padding: 0 10px;
     font-size: 12px;
@@ -187,6 +188,7 @@ a.menu_mobile {
 #menu li a:focus {
     color: #000;
     background: #ccc;
+    border-radius: 10% 20%;
 }
 
 /*######## ESTUDOS ##########*/
@@ -284,6 +286,30 @@ a.menu_mobile {
 
 .alg-list a.ativo {
     color: red;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table, td {         
+    border: .5px solid rgba(0,0,0,0.5);
+}
+
+th, td {
+    font-size: 1.2em;
+    padding: 8px;
+    text-align: center;            
 }
 /*########## FOOTER #########*/
  

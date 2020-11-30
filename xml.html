@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>XML</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home">
+<div class="conteudo">
+<header>
+    <a href="https://mlssystem.github.io"><img id="icone" src="img/menu.png"></a>    
+    <a class="menu_mobile" href="#menu">Menu</a>
+</header>         
+ 
+<article>
+
+    <h2>XML</h2>
+
+    <p>Saltar para a navegaçãoSaltar para a pesquisa</p>
+
+    <p>É um dos subtipos da SGML (acrônimo de Standard Generalized Markup Language ou Linguagem Padronizada de Marcação Genérica) capaz de descrever diversos tipos de dados. Seu propósito principal é a facilidade de compartilhamento de informações por intermédio da internet.</p>
+
+    <p>Entre linguagens baseadas em XML incluem-se XHTML (formato para páginas Web), RDF, SDMX, SMIL, MathML (formato para expressões matemáticas), NCL, XBRL, XSIL e SVG (formato gráfico vetorial). A principal característica do XML, de criar uma infraestrutura única para diversas linguagens, é que linguagens desconhecidas e de pouco uso também podem ser definidas sem maior trabalho e sem necessidade de serem submetidas aos comitês de padronização.</p>
+
+    <h2>Características do XML</h2>
+
+    <p>Em meados da década de 1990, o World Wide Web Consortium (W3C) começou a trabalhar em uma linguagem de marcação que combinasse a flexibilidade da SGML com a simplicidade da HTML. O princípio do projeto era criar uma linguagem que pudesse ser lida por software, e integrar-se com as demais linguagens. Sua filosofia seria incorporada por vários princípios importantes:</p>
+
+    <ul>
+        <li>Separação do conteúdo da formatação</li>
+        <li>Simplicidade e legibilidade, tanto para humanos quanto para computadores</li>
+        <li>Possibilidade de criação de tags sem limitação</li>
+        <li>Criação de arquivos para validação de estrutura (chamados DTDs)</li>
+        <li>Interligação de bancos de dados distintos</li>
+        <li>Concentração na estrutura da informação, e não na sua aparência</li>
+    </ul>
+
+    <p>O XML é um formato para a criação de documentos com dados organizados de forma hierárquica, como se vê, frequentemente, em documentos de texto formatados, imagens vetoriais ou bancos de dados.</p>
+
+    <p>Pela sua portabilidade, já que é um formato que não depende das plataformas de hardware ou de software, um banco de dados pode, através de uma aplicação, escrever em um arquivo XML, e um outro banco distinto pode ler então estes mesmos dados.</p>
+
+    <h2>Exemplo</h2>
+
+    <p>Este exemplo demonstra a sintaxe flexível do XML sendo usada para descrever uma receita de pão:</p>
+    
+    <div class="codigo">
+        &#60;?xml version="1.0" encoding="ISO-8859-1"?&#62;<br>
+        &#60;receita nome="pão" tempo_de_preparo="5 minutos" tempo_de_cozimento="1 hora"&#62;<br>
+        &nbsp;&nbsp;&#60;titulo&#62;Pão simples&#60;/titulo&#62;<br>
+        &nbsp;&nbsp;&#60;ingredientes&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;ingrediente quantidade="3" unidade="xícaras"&#62;Farinha de Trigo&#60;/ingrediente&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;ingrediente quantidade="7" unidade="gramas"&#62;Fermento&#60;/ingrediente&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;ingrediente quantidade="1.5" unidade="xícaras" estado="morna"&#62;Água&#60;/ingrediente&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;ingrediente quantidade="1" unidade="colheres de chá"&#62;Sal&#60;/ingrediente&#62;<br>
+        &nbsp;&nbsp;&#60;/ingredientes&#62;<br>
+        &nbsp;&nbsp;&#60;instrucoes&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;passo&#62;Misture todos os ingredientes, e dissolva bem.&#60;/passo&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;passo&#62;Cubra com um pano e deixe por uma hora em um local morno.&#60;/passo&#62;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&#60;passo&#62;Misture novamente, coloque numa bandeja e asse num forno.&#60;/passo&#62;<br>
+        &nbsp;&nbsp;&#60;/instrucoes&#62;<br>
+        &#60;/receita&#62;<br><br>
+    </div>
+
+    <p>Onde temos na primeira linha:</p>
+
+    <p>&#60;receita nome="pão" tempo_de_preparo="5 minutos" tempo_de_cozimento="1 hora"&#62;
+    "Receita" é o nome principal para o seu documento. Note que a semelhança entre XML e HTML é grande, na 1ª linha abrimos a tag Receita e na última linha a fechamos, como em HTML, assim se estendendo por todo o exemplo.</p>
+
+    <h2>Vantagens e desvantagens</h2>
+
+    <p>Com relação aos outros "formatos universais para intercâmbio de dados" já propostos e experimentados, o XML apresenta diversas vantagens técnicas, mas são as vantagens não-técnicas que o tornam um tópico de tão grande importância:</p>
+
+    <ul>
+        <li>É um padrão "de fato" e formalmente: num universo onde cada desenvolvedor e cada fabricante tem a liberdade de criar e impor seu próprio formato, a aceitação do XML tem sido vista como o seu maior trunfo</li>
+        <li>Tem sua origem em uma instituição de padronização das mais abertas e dinâmicas, o W3C</li>
+        <li>Se baseia na experiência de sucesso do SGML, sendo considerado inclusive o "sucessor da SGML"</li>
+    </ul>
+
+    <h2>Vantagens técnicas</h2>
+
+    <p>É baseado em texto simple</p>
+
+    <p>Com relação aos formatos não-texto (binários), um debate existe desde os tempos do SGML, mas ainda hoje a comunidade de usuários e desenvolvedores prefere o texto ao binário, e as opções do tipo txt.zip (texto comprimido) tais como o OpenDocument são a saída mais largamente adotada</p>
+
+    <p>Suporta Unicode, permitindo que a maior parte da informação codificada em linguagem humana possa ser comunicada</p>
+
+    <p>Pode representar as estruturas de dados relevantes da computação: listas, registros, árvores</p>
+
+    <p>É auto-documentado (DTDs e XML Schemas): o próprio formato descreve a sua estrutura e nomes de campos, assim como </p>
+
+    <h2>valores válidos</h2>
+
+    <p>A sintaxe restrita e requerimentos de parsing tornam os algoritmos de análise mais eficientes e consistentes</p>
+
+    <p>É editável, devido à popularidade do XML nos dias de hoje, com diferentes níveis de automação, em qualquer ambiente:</p>
+
+    <ul>
+        <li>Sem automação: editores txt antigos, tais como vi</li>
+        <li>Com recurso automático de destaque: a maior parte dos editores txt modernos oferece recursos para destaque de XML (distinção visual entre tag, atributo e conteúdo)</li>
+        <li>Com recursos de visualização e controle (folding) da hierarquia: editores txt mais especializados e editores simples acoplados a navegadores</li>
+        <li>Com recursos de validação e análise sintática: ferramentas um pouco mais sofisticadas, orientadas a programadores, tais como as IDEs, ou orientadas a conteúdo, tais como editores XHTML, ambos vem se adaptando para lidar com outros formatos XML, interpretando DTD, XSLT ou XSD</li>
+    </ul>
+
+    <h2>Desvantagens técnicas</h2>
+
+    <p>As desvantagens em geral se restringem às aplicações que não demandam maior complexidade, tais como vetores, listas associativas (chave-valor) e informações relativas a configuração, em que o bom senso estabelece a melhor escolha (entre o XML ou um formato menos popular).</p>
+
+    <p>O "XML simples" pode ser substituído por formatos mais simples, como properties, TOML, YAML, JSON e Simple Outline XML. Os principais critérios para se avaliar a demanda por um formato mais simples são:</p>
+
+    <p>Velocidade: a grande quantidade de informação repetida prejudicando a velocidade de transferência real de informação (quando esta é transportada na forma de XML)</p>
+
+    <p>Editabilidade txt: o arquivo "XML simples" (como se pode ver nos exemplos acima) pode ser bem pouco intuitivo, dificultando sua edição com editores txt por pessoas leigas, mais ainda no caso de volume de dados muito grandes, onde o XML pode sequer ser facilmente editável por pessoas experientes</p>
+
+    <p>O formato properties, por exemplo, é mais fácil de ser editado por leigos, por ser apenas uma lista de itens do tipo chave-valor, e o JSON é um exemplo de um formato mais prático e rápido em contexto Javascript.</p>
+
+    <p>O exemplo abaixo equivale ao exemplo da receita de pão e demonstra como um XML, mesmo sendo sintaticamente válido, pode ficar de difícil leitura quando criado por ferramentas geradoras de código. A interpretação e a edição de grandes arquivos XML não indentados são ainda mais complexas para todos, leigos ou experientes:</p>
+
+    <div class="codigo">
+        <p>&#60;?xml version="1.0" encoding="ISO-8859-1"?&#62;&#60;receita nome="pão" tempo_de_preparo="5 minutos" tempo_de_cozimento="1 hora"&#62;    &#60;titulo&#62;Pão simples&#60;/titulo&#62;    &#60;ingredientes&#62;        &#60;ingrediente quantidade="3" unidade="xícaras"&#62;Farinha&#60;/ingrediente&#62;        &#60;ingrediente quantidade="7" unidade="gramas"&#62;Fermento&#60;/ingrediente&#62;     &#60;ingrediente quantidade="1.5" unidade="xícaras" estado="morna"&#62;Água&#60;/ingrediente&#62;&#60;ingrediente quantidade="1" unidade="colheres de chá" &#62;Sal&#60;/ingrediente&#62;    &#60;/ingredientes&#62;    &#60;instrucoes&#62;        &#60;passo&#62;Misture todos os ingredientes,e dissolva bem.&#60;/passo&#62;        &#60;passo&#62;Cubra com um pano e deixe por uma hora em um local morno.&#60;/passo&#62;    &#60;passo&#62;Misture novamente, coloque numa bandeja e asse num forno.&#60;/passo&#62;&#60;/instrucoes&#62;&#60;/receita&#62;</p>
+        </div>
+
+    <h2>XML e Banco de Dados</h2>
+
+    <p>Um dos principais requisitos para a integração de sistemas de informações é a existência de um mecanismo que possa mediar e compatibilizar a troca de informações entre sistemas que utilizam diferentes formas de representações. O XML para banco de dados é uma forma de resolver esse problema, utilizando uma técnica que faz essa interação de dados de uma forma que não seja perdida ou deixada nenhuma informação relevante contida em qualquer uma das bases de dados que serão integradas.</p>
+
+    <h2>Quando Usar</h2>
+
+    <p>Se será necessário ou não armazenar as informações de uma determinada aplicação em um formato XML, deve-se analisar o objetivo de armazena-las e a forma como elas serão recuperadas. Se, por exemplo, futuramente uma aplicação utilizará apenas o formato XML, é recomendado já armazena-las neste formato.</p>
+
+    <p>Abaixo, segue uma lista com possíveis cenários onde a utilização desse formato é de grande utilidade:</p>
+
+    <ul>
+        <li>Se for necessário armazenar um bloco de informações e posteriormente recupera-lo inteiramente;</li>
+        <li>Onde é necessário garantir compatibilidade com sistemas de armazenamentos, que podem não aceitar tipos de dados;</li>
+        <li>Quando é necessário recuperar um documento em XML.</li>
+    </ul>
+
+    <h2>XML em SGBDs Relacionais</h2>
+
+    <p>Como qualquer outro tipo de informação, um documento XML tende a ser armazenado em um banco de dados. E uma das formas de armazenar estes documentos é utilizando SGBDs relacionais. Utilizar esta forma de armazenamento é vantajosa, pois esta já é uma tecnologia bastante utilizada e muito bem desenvolvida o que a torna uma plataforma bem estável para utilização.</p>
+
+    <p>Para armazenar os dados em XML em um banco de dados relacional, uma das formas a ser utilizada é através do tipo de dados CLOB. Se utilizador desta forma, o banco de dados não ira conhecer a estrutura desta informação, servindo apenas como um repositório de dados.</p>
+
+    <h2>SGBDs Habilitados a XML</h2>
+
+    <p>De maneira geral, um SGBD que é habilitado para XML, realiza uma leitura de toda a estrutura de um documento XML e mapeia seus elementos , criando tipos de dados abstratos, de acordo com o XML facilitando o armazenamento e o processamento destes dados.</p>
+
+    <h2>Integrando XML com Banco de Dados</h2>
+
+    <p>A linguagem SQL define alguns operadores que quando utilizados em um banco de dados, geram um resultado dentro do padrão de XML.</p>
+
+    <p>Alguns exemplos de interações quando utilizado o SGBD são:</p>
+
+    <ul>
+        <li>XMLELEMENT - Transforma os valores contidos no modelo relacional em estrutura XML;</li>
+        <li>XMLFOREST - Cria uma lista (Floresta) de elementos XML onde cada Operador produz um novo elemento;</li>
+        <li>XMLELEMENT</li>
+        <li>XMLFOREST</li>
+    </ul>
+
+    <h2>Regras para boa formação de um arquivo XML</h2>
+
+    <p>Todo documento XML, além da tag introdutória, deve ter um único elemento (tag) que sirva como raiz para todos os demais elementos do documento;</p>
+
+    <p>XML é case sensitive, portanto difere letras maiúsculas e minúsculas, devendo tomar cuidado com o uso de CamelCases.</p>
+
+    <p>Todo elemento XML deve ser iniciado e fechado, exceto o que define a versão do XML usada e outras definições de tag única, exemplo &#60;system opera="ligado" onde="aqui" /&#62;.</p>
+
+    <p>Comentários em XML são iguais ao HTML (<!--comentário-->) .</p>
+
+
+    <p>Fonte: <a href="https://pt.wikipedia.org/wiki/XML" target="_blank">Wikipédia</a></p> 
+ 
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>
+            <li><a id="ativo" class="ativo" href="#">XML</a></li>             
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul> 
+    </nav>
+         
+        <footer>
+            <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+        </footer>
+     
+    </div>
+     
+</body>
+</html>
