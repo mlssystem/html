@@ -1,2 +1,2 @@
 # html
- Conteúdo para estudos de HTML
+ Conteúdo de pesquisa para estudos de HTML
