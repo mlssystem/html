@@ -4,6 +4,47 @@
     src: url("../fonts/bubblegum-sans-regular.otf");
 }
 
+footer {
+  /*background-color: #000 !important;*/
+  background-image: url("../img/bg.jpg");  
+  color: #fff;
+  width: 100%;
+  padding: 3%;
+}
+
+#mls {
+  font-family: 'FonteLogo';
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+#iniciando {
+	margin-top: 80px;
+}
+
+/*.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer a {
+  color: #112;
+  font-family: FonteLogo;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}*/
+
+code {
+  font-size: 80%;
+}
+
 #marquee-title p {
   text-transform: uppercase;
   font-weight: bold;
@@ -41,39 +82,6 @@
 
 #marquee-esquerda {
   text-indent: 20%;
-}
-
-#mls {
-  font-family: 'FonteLogo';
-}
-
-main > .container {
-  padding: 60px 15px 0;
-}
-
-#iniciando {
-	margin-top: 80px;
-}
-
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
-}
-
-.blog-footer a {
-  color: #112;
-  font-family: FonteLogo;
-}
-
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
-
-code {
-  font-size: 80%;
 }
 
 #marquee-1 {
